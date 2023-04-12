@@ -7,33 +7,31 @@
     </head>
     <body>
         <div class="center">
-            <div class="title">
-                <h2>Add Student</h2>
-            </div>
+            <div class="title">Add Student</div>
             <form method="POST">
                 <div>
                     <div>
                     <input type="text" required  name="Name" class="name" placeholder="Name">
                     </div>
-    
-                    <div>
-                    <input type="number" required name="ID" class="id" placeholder="ID">
-                    </div>
-    
-                    <div>
-                    <input type="Email" required  name="Email" class="email" placeholder="Email">
-                    </div>
-    
-                    <div>
-                        <input type="number" required name="mobile" class="mobile" placeholder="Phone Number">
-                    </div>
-    
+
                     <div>
                         <input type="text" placeholder="Date Of Birth" onfocus="(this.type='date')" required name="DOB" class="dob">
                     </div>
 
                     <div>
-                        <input type="number" required name="GPA" class="gpa" placeholder="GPA">
+                    <input type="Email" required  name="Email" class="email" placeholder="Email">
+                    </div>
+    
+                    <div>
+                        <input type="text" required name="mobile" class="mobile" placeholder="Phone Number">
+                    </div>
+    
+                    <div>
+                        <input type="number" required name="ID" class="id" placeholder="ID" min="0">
+                    </div>
+
+                    <div>
+                        <input type="number" required name="GPA" class="gpa" placeholder="GPA" max="4" min="0" step="0.01">
                     </div>
  
                     <div>
@@ -59,14 +57,15 @@
                     </div>
     
                     <div class="gen">
-                        <input id="M" type="radio" value="Male" name = "Gender" required class="gender"> 
-                        <label for="M"> Male</label>
+                        <input id="M" type="radio" value="Male" name = "Gender" required class="gender">
+                        <label for="M" class="male"><p>Male</p></label>
                         <input id ="F" type="radio" value="Female" name = "Gender" class="gender">
-                        <label for="F">Female</label>
+                        <label for="F" class="female"><p>Female</p></label>
                     </div>
-    
                     <button type="Submit" class="submit">Submit</button>
                 </div>
+            </form>  
         </div>
+        <script src="../Scripts/validAdd.js"></script>
     </body>
 </html>
