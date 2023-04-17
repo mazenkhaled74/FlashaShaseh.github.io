@@ -49,7 +49,6 @@ body{
     height: 45%;
     top: 57%;
     left: 0.1%;
-    overflow: hidden;
 }
 input[type = "checkbox"]{
     width: 15px;
