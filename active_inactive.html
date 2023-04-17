@@ -8,96 +8,34 @@
 </head>
 
 <body>
-    <div>
-        <form method="post">
-            <table class="activeInactive">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>ID</th>
-                        <th>Level</th>
-                        <th>Department</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Mazen Khaled</td>
-                        <td>20210314</td>
-                        <td>Second</td>
-                        <td>General</td>
-                        <td>
-                            <select name="Status" id="s">
-                                <option value="active">Active</option>
-                                <option value="Inactive">Inactive</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Taha Ahmed</td>
-                        <td>20210189</td>
-                        <td>Second</td>
-                        <td>General</td>
-                        <td>
-                            <select name="Status" id="s">
-                                <option value="active">Active</option>
-                                <option value="Inactive">Inactive</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Yousef Ahmed</td>
-                        <td>20210461</td>
-                        <td>Second</td>
-                        <td>General</td>
-                        <td>
-                            <select name="Status" id="s">
-                                <option value="active">Active</option>
-                                <option value="Inactive">Inactive</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Omar Ashraf</td>
-                        <td>20210259</td>
-                        <td>Second</td>
-                        <td>General</td>
-                        <td>
-                            <select name="Status" id="s">
-                                <option value="active">Active</option>
-                                <option value="Inactive">Inactive</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Amr Hesham</td>
-                        <td>20210280</td>
-                        <td>Second</td>
-                        <td>General</td>
-                        <td>
-                            <select name="Status" id="s">
-                                <option value="active">Active</option>
-                                <option value="Inactive">Inactive</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Mahmoud Osama</td>
-                        <td>20210367</td>
-                        <td>Second</td>
-                        <td>General</td>
-                        <td>
-                            <select name="Status" id="s">
-                                <option value="active">Active</option>
-                                <option value="Inactive">Inactive</option>
-                            </select>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <input type="submit" value="Save Changes" class="sub">
-        </form>
+    <div class="navBar">
+        <nav>
+            <div class="homeP">
+                <a class="navLink" href="home.html">Home Page</a>
+            </div>
+            <div class="studP">
+                <a class="navLink" href="StudentAffairs.html">Student Affairs</a>
+            </div>
+            <div class="addP">
+                <a class="navLink" href="add.html">Add Students</a>
+            </div>
+            <div class="editP">
+                <a class="navLink" href="studentinfo.html">Edit Students</a>
+            </div>
+            <div class="allP">
+                <a class="navLink" href="active_inactive.html">All Students</a>
+            </div>
+        </nav>
     </div>
+    <div id="custom">
+        <div class="check">
+            <input type="checkbox" name="activeStudents" id="filter">
+            <label for="filter">Active Students Only</label>
+        </div>
+    </div>
+    <div id="container">
+        <div id="tableContainer"></div>
+    </div>
+    <script src="Scripts/showAll.js"></script>
 </body>
-
 </html>
