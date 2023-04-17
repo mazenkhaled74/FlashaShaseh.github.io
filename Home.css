@@ -35,19 +35,19 @@ body
   }
   
   .quarter:nth-child(1) {
-    background-image: url("../Images/HR.jpg");
+    background-image: url("HR.jpg");
   }
   
   .quarter:nth-child(2) {
-    background-image: url("../Images/SA.jpg");
+    background-image: url("SA.jpg");
   }
   
   .quarter:nth-child(3) {
-    background-image: url("../Images/HS.jpg");
+    background-image: url("HS.jpg");
   }
   
   .quarter:nth-child(4) {
-    background-image: url("../Images/LT.jpg");
+    background-image: url("LT.jpg");
   }
   
   .content {
